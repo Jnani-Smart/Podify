@@ -86,7 +86,9 @@ Podify is built with modern Android tech stack:
 - **Protocol**: Reverse-engineered Apple Proximity Pairing (0x07)
 
 ### BLE Parser Logic
-We use the `0x07` Proximity Pairing message to decode:
+We use the `0x07` Proximity Pairing message to decode battery and status. 
+See [**BLE Protocol Documentation**](docs/BLE_PROTOCOL.md) and [**Architecture Guide**](docs/ARCHITECTURE.md) for deep dives.
+
 ```kotlin
 Byte 5:  Wearing State (In-Ear, Case Open, etc.)
 Byte 6:  Left Battery & Right Battery
